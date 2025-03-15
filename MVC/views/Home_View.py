@@ -13,79 +13,58 @@ import images.images
 
 
 class Ui_Dialog(object):
-    def setupUi(self, Dialog):
-        Dialog.setObjectName("Dialog")
-        Dialog.resize(728, 585)
-        self.label_5 = QtWidgets.QLabel(Dialog)
-        self.label_5.setGeometry(QtCore.QRect(0, 540, 971, 71))
-        self.label_5.setStyleSheet("font: 87 18pt \"Arial Black\";\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0.125, x2:0.334, y2:1, stop:0.0895522 rgba(146, 169, 190, 255), stop:1 rgba(255, 255, 255, 255));")
-        self.label_5.setText("")
-        self.label_5.setObjectName("label_5")
-        self.label_6 = QtWidgets.QLabel(Dialog)
-        self.label_6.setGeometry(QtCore.QRect(0, 0, 981, 61))
-        self.label_6.setStyleSheet("font: 87 18pt \"Arial Black\";\n"
+        def setupUi(self, Dialog):
+                Dialog.setObjectName("Dialog")
+                Dialog.resize(728, 585)
+                self.label_6 = QtWidgets.QLabel(Dialog)
+                self.label_6.setGeometry(QtCore.QRect(0, 0, 981, 61))
+                self.label_6.setStyleSheet("font: 87 18pt \"Arial Black\";\n"
 "background-color: qlineargradient(spread:pad, x1:1, y1:0.556818, x2:0, y2:0.42, stop:0 rgba(157, 197, 235, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "color: rgb(109, 112, 116);")
-        self.label_6.setObjectName("label_6")
-        self.label_4 = QtWidgets.QLabel(Dialog)
-        self.label_4.setGeometry(QtCore.QRect(540, 540, 231, 41))
-        self.label_4.setStyleSheet("font: 75 10pt \"MS Shell Dlg 2\";")
-        self.label_4.setObjectName("label_4")
-        self.label_7 = QtWidgets.QLabel(Dialog)
-        self.label_7.setGeometry(QtCore.QRect(640, 0, 111, 71))
-        self.label_7.setStyleSheet("image: url(:/images1/lufy.png);")
-        self.label_7.setText("")
-        self.label_7.setObjectName("label_7")
-        self.label = QtWidgets.QLabel(Dialog)
-        self.label.setGeometry(QtCore.QRect(-40, 120, 811, 441))
-        self.label.setStyleSheet("image: url(:/images1/biblioteca.jpg);")
-        self.label.setText("")
-        self.label.setObjectName("label")
-        self.label_2 = QtWidgets.QLabel(Dialog)
-        self.label_2.setGeometry(QtCore.QRect(10, 70, 711, 21))
-        self.label_2.setText("")
-        self.label_2.setObjectName("label_2")
-        self.label_8 = QtWidgets.QLabel(Dialog)
-        self.label_8.setGeometry(QtCore.QRect(0, 60, 971, 71))
-        self.label_8.setStyleSheet("font: 87 18pt \"Arial Black\";\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0.125, x2:0.334, y2:1, stop:0.0895522 rgba(146, 169, 190, 255), stop:1 rgba(255, 255, 255, 255));")
-        self.label_8.setText("")
-        self.label_8.setObjectName("label_8")
-        self.btnOpenAddLibro = QtWidgets.QPushButton(Dialog)
-        self.btnOpenAddLibro.setGeometry(QtCore.QRect(30, 80, 111, 41))
-        self.btnOpenAddLibro.setStyleSheet("font: 75 10pt \"MS Shell Dlg 2\";\n"
-"border-color: rgb(30, 41, 255);")
-        self.btnOpenAddLibro.setDefault(True)
-        self.btnOpenAddLibro.setFlat(False)
-        self.btnOpenAddLibro.setObjectName("btnOpenAddLibro")
+                self.label_6.setObjectName("label_6")
 
-        self.btnOpenAddUsuario = QtWidgets.QPushButton(Dialog)
-        self.btnOpenAddUsuario.setGeometry(QtCore.QRect(150, 80, 111, 41))
-        self.btnOpenAddUsuario.setStyleSheet("font: 75 10pt \"MS Shell Dlg 2\";\n"
-"border-color: rgb(30, 41, 255);")
-        self.btnOpenAddUsuario.setDefault(True)
-        self.btnOpenAddUsuario.setFlat(False)
-        self.btnOpenAddUsuario.setObjectName("btnOpenAddUsuario")
 
-        self.retranslateUi(Dialog)
-        QtCore.QMetaObject.connectSlotsByName(Dialog)
+                self.label = QtWidgets.QLabel(Dialog)
+                self.label.setGeometry(QtCore.QRect(-40, 60, 811, 521))
+                self.label.setPixmap(QtGui.QPixmap("images/biblioteca.jpg").scaled(self.label.size(), QtCore.Qt.KeepAspectRatio))
+                self.label.setText("")
+                self.label.setObjectName("label")
+              
+                self.btnOpenAddLibro = QtWidgets.QPushButton(Dialog)
+                self.btnOpenAddLibro.setGeometry(QtCore.QRect(200, 230, 150, 150))
+                self.btnOpenAddLibro.setStyleSheet("font: 75 20pt \"MS Shell Dlg 2\";\n"
+"border-color: rgb(30, 41, 255);\n"
+"background-color: rgb(100, 149, 237);")
+                self.btnOpenAddLibro.setDefault(True)
+                self.btnOpenAddLibro.setFlat(False)
+                self.btnOpenAddLibro.setObjectName("btnOpenAddLibro")
 
-    def retranslateUi(self, Dialog):
-        _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.label_6.setText(_translate("Dialog", " System to add new books and users "))
-        self.label_4.setText(_translate("Dialog", "Welcome"))
-        self.btnOpenAddLibro.setText(_translate("Dialog", "Add Book"))
-        self.btnOpenAddUsuario.setText(_translate("Dialog", "Add User"))
+                self.btnOpenAddUsuario = QtWidgets.QPushButton(Dialog)
+                self.btnOpenAddUsuario.setGeometry(QtCore.QRect(400, 230, 150, 150))
+                self.btnOpenAddUsuario.setStyleSheet("font: 75 20pt \"MS Shell Dlg 2\";\n"
+"border-color: rgb(30, 41, 255);\n"
+"background-color: rgb(100, 149, 237);")
+                self.btnOpenAddUsuario.setDefault(True)
+                self.btnOpenAddUsuario.setFlat(False)
+                self.btnOpenAddUsuario.setObjectName("btnOpenAddUsuario")
+
+                self.retranslateUi(Dialog)
+                QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+        def retranslateUi(self, Dialog):
+                _translate = QtCore.QCoreApplication.translate
+                Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+                self.label_6.setText(_translate("Dialog", " System to add new books and users "))
+                self.btnOpenAddLibro.setText(_translate("Dialog", "Add Book"))
+                self.btnOpenAddUsuario.setText(_translate("Dialog", "Add User"))
 
 
 
 if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    Dialog = QtWidgets.QDialog()
-    ui = Ui_Dialog()
-    ui.setupUi(Dialog)
-    Dialog.show()
-    sys.exit(app.exec_())
+        import sys
+        app = QtWidgets.QApplication(sys.argv)
+        Dialog = QtWidgets.QDialog()
+        ui = Ui_Dialog()
+        ui.setupUi(Dialog)
+        Dialog.show()
+        sys.exit(app.exec_())

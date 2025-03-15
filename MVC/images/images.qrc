@@ -1,3 +1,4 @@
+<!DOCTYPE RCC><RCC version="1.0">
 <RCC>
   <qresource prefix="images1">
     <file>lufy.png</file>
@@ -8,3 +9,5 @@
   </qresource>
   <qresource prefix="images2"/>
 </RCC>
+
+
